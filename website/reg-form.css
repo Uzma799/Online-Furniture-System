@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)), url(/website/images/modernfur.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.form-box{
+    width: 600px;
+    height: 700px;
+    position: relative;
+    margin: 6% auto;
+    background: #d8e0e6;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.button-box{
+    width: 320px;
+    margin: 60px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 50px;
+}
+
+.toggle-btn{
+    padding: 25px 57px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 190px;
+    height: 100%;
+    background: linear-gradient(to right, #6f9ee6, #032d6b);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 120px;
+    height: auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #6f9ee6, #032d6b);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 170px;
+}
+
+#register{
+    left: 700px;
+}
+

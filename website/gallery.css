@@ -1,0 +1,78 @@
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translate(-4rem) scale(0.4);
+    }
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+.gallery .box-container .box{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.gallery .box-container .box:hover .content{
+    display: flex;
+}
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .box-container .box .content{
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82%;
+    width: 88.5%;
+    padding: 2rem;
+    text-align: center;
+    border: 0.2rem solid #222;
+    display: none;
+}
+.gallery .box-container .box .content h3{
+    font-size: 2rem;
+    color: #222;
+    animation: fadeIn .2s linear backwards;
+}
+.gallery .box-container .box .content p{
+    font-size: 1.3rem;
+    color: #222;
+    line-height: 2;
+    animation: fadeIn .2s linear backwards .4s;
+}
+.gallery .box-container .box .content .btn{
+    padding: 20px;
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+    background-color:  #9b5c41;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    animation: fadeIn .2s linear backwards .6s;
+}
+.gallery .box-container .box .content .btn:hover {
+    letter-spacing: 3px;
+    background-color: hsl(18, 41%, 38%);
+    color: hsl(0, 0%, 100%);
+   }
+
+span{
+    color: rgb(241, 74, 74);
+}

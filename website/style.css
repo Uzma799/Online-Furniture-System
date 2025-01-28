@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #9b5c41;
+    --text-color: #2e2e2e;
+    --hover-color: hsl(18, 41%, 38%);
+    --bg-color: #fff;
+}
+header {
+    background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(/website/images/furniture.jpg);
+    height: 100vh;
+    padding: 2rem 2%;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 150%; height: 13%;
+    background-color: rgb(0,0,0,0.2);
+    color: rgb(0,0,0,0.2);
+}
+ul
+{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 20px 30px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img{
+    float: left;
+    width: 170px;
+    height: auto;
+}
+.main{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.icons{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 2rem;
+
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-style:normal;
+    font-size: 70px;
+}
+.title h2{
+    color: black;
+    font-style: italic;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 35.5%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+   border: 1px solid #fff;
+   padding: 10px 30px;
+   color: #fff;
+   text-decoration: none;
+   transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+ /* Services */
+ .services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+    background: #a3bac5;
+ }
+ .services .box{
+    text-align: center;
+    padding: 2rem;
+ }
+ .services .box img{
+    height: 10rem;
+ }
+ .services .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #0a0a0a;
+ }
+ .services .box p{
+    line-height: 2;
+    font-size: 1.4rem;
+    color: #111010;
+ }
+
+ /* Footer */
+ .footer{
+    padding: 50px 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1rem;
+    background: var(--text-color);
+ }
+ .footer-box{
+    display: flex;
+    flex-direction: column;
+ }
+ .footer-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--bg-color);
+ }
+ .footer-box a{
+    color: var(--bg-color);
+    margin-bottom: 0.5rem ;
+ }
+.footer-box a:hover{
+    color: var(--main-color);
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.social .bx{
+    padding: 8px;
+    background:  #a3bac5;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+}
+.social .bx:hover{
+    background: var(--hover-color);
+    transition: 0.3s all linear;
+}
+
+/* Contact Us */
+.message{
+    background: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)), url(/website/images/contact.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 3rem 2rem;
+}
+.message form{
+    margin: 2rem auto;
+    background: #fff;
+    text-align: center;
+    max-width: 40rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.message form h3{
+    font-size: 3rem;
+    color: #222;
+}
+.message form .box{
+    width: 100%;
+    padding: 0.1rem 0;
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    color: #312525;
+    text-transform: none;
+    border-radius: 0.2rem solid #222;
+}
+.message form .box:focus{
+    border-color: #a3bac5;
+}
+.message form textarea{
+    height: 15rem;
+    resize: none;
+}
+.msg span{
+    color: rgb(241, 74, 74);
+}
+.message-btn{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 28px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:  #f05252;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #f05252;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0  #f05252;
+}
+.message-btn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #f05252;
+}
+
+/*login */
+.user{
+    color: white;
+}

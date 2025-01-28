@@ -1,0 +1,131 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #9b5c41;
+    --text-color: #2e2e2e;
+    --hover-color: hsl(18, 41%, 38%);
+    --bg-color: #fff;
+}
+ /* Popular */
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.heading h2{
+    font-size: 2rem;
+}
+.heading a{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.heading a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+.popular-content,
+.products-content,
+.bedroom-content,
+.living-content,
+.outdoors-content,
+.kitchen-content,
+.lamp-content,
+.furnishing-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 1.2rem;
+}
+.box{
+    padding: 50px;
+    background: #f1f1f1;
+    border-radius: auto;
+    display: grid;
+    row-gap: 1.5rem;
+}
+.box img{
+    width: 350px;
+    height: 270px;
+    padding: 20px;
+    object-fit: contain;
+    object-position: center;
+}
+.box-text{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 80%;
+    height: auto;
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: auto;
+}
+.title-price h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.title-price span{
+    font-weight: 500;
+}
+.box-text .bx{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+.box-text .bx:hover{
+    background: var(--main-color);
+}
+
+/* Product */
+.products-content .box-text,
+.bedroom-content .box-text,
+.living-content .box-text,
+.outdoors-content .box-text,
+.kitchen-content .box-text,
+.lamp-content .box-text,
+.furnishing-content .box-text{
+    background: var(--text-color);
+}
+.products-content .box-text h3,
+.bedroom-content .box-text h3,
+.living-content .box-text h3,
+.outdoors-content .box-text h3,
+.kitchen-content .box-text h3,
+.lamp-content .box-text h3,
+.furnishing-content .box-text h3{
+    color: var(--bg-color);
+}
+.products-content .box-text span,
+.bedroom-content .box-text span,
+.living-content .box-text span,
+.outdoors-content .box-text span,
+.kitchen-content .box-text span,
+.lamp-content .box-text span,
+.furnishing-content .box-text span{
+    color: var(--bg-color);
+}
+.products-content .box-text .bx,
+.bedroom-content .box-text .bx,
+.living-content .box-text .bx,
+.outdoors-content .box-text .bx,
+.kitchen-content .box-text .bx,
+.lamp-content .box-text .bx,
+.furnishing-content .box-text .bx{
+    background: var(--main-color);
+}
+.products-content .box-text .bx:hover,
+.bedroom-content .box-text .bx:hover,
+.living-content .box-text .bx:hover,
+.outdoors-content .box-text .bx:hover,
+.kitchen-content .box-text .bx:hover,
+.lamp-content .box-text .bx:hover,
+.furnishing-content .box-text .bx:hover{
+    background: var(--hover-color);
+}
